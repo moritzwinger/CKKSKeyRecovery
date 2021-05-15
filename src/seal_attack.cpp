@@ -1,6 +1,6 @@
 // Key recovery attack against the SEAL implementation of CKKS
-#include "seal/seal.h"
-#include "seal/util/polyarithsmallmod.h"
+#include <seal/seal.h>
+#include "/usr/local/include/SEAL-3.6/seal/util/polyarithsmallmod.h"
 
 #include <iostream>
 #include <vector>
@@ -108,7 +108,7 @@ int attack(uint32_t logN = 15,      // Ring size
            int32_t evalDeg = -1,    // degree to evaluate, default to all
            HomomorphicComputation hc = HC_NOOP // the circuit to compute homomorphically
            ) {
-   EncryptionParameters parms(scheme_type::CKKS);   // Set the parameters for CKKS
+   EncryptionParameters parms(scheme_type::ckks);   // Set the parameters for CKKS
    size_t poly_modulus_degree = 1<<logN;
    parms.set_poly_modulus_degree(poly_modulus_degree);
 

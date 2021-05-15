@@ -1,10 +1,10 @@
 #include "seal_utils.h"
-#include <seal/util/uintarithsmallmod.h>
-#include <seal/util/polyarithsmallmod.h>
+#include </usr/local/include/SEAL-3.6/seal/util/uintarithsmallmod.h>
+#include </usr/local/include/SEAL-3.6/seal/util/polyarithsmallmod.h>
 
 #include <iostream>
 
-void print_parameters(std::shared_ptr<seal::SEALContext> context) {
+void print_parameters(seal::SEALContext &context) {
     auto &context_data = *context->key_context_data();
     std::cout << "Encryption parameters :" << std::endl;
     std::cout << "   poly_modulus_degree: " <<

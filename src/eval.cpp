@@ -1,8 +1,6 @@
 #include "eval.h"
 #include <cmath>
 #include <cstring>
-
-#include <NTL/ZZ.h>
 #include <iostream>
 
 void evalPlainAdd(std::vector<cx_double> & res,

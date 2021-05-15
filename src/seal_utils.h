@@ -5,8 +5,8 @@
 #include <vector>
 #include <iostream>
 #include <seal/seal.h>
-#include <seal/modulus.h>
-#include <seal/util/iterator.h>
+/*#include </usr/local/include/SEAL-3.6/seal/modulus.h>
+#include </usr/local/include/SEAL-3.6/seal/util/iterator.h>*/
 
 using namespace seal;
 
